@@ -3,26 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css">
     <title>ReactNotes</title>
   </head>
   <body>
     <header>
-      <div class="logo">React.js Notes</div>
+      <div class="logo">
+        <img src="/images/icons8-react-40.png" alt="React">
+        <h2>ReactNotes</h2>
+      </div>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#theory">Theory</a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">Home</a></li>
-          <li href="#theory">Theory</li>
-          <li href="#faqs">FAQs</li>
-          <li href="#contact">Contact</li>
-          <li href="about">About</li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
         </ul>
       </nav>
     </header>
 
-    <section id="home">
+    <section id="home" class="home">
       <div class="hero">
         <h1>Welcome to the world of React.js</h1>
         <p>Learn React.js with comprehensive notes and practical examples.</p>
@@ -30,6 +32,7 @@
       <div class="core">
         <h2>Core concepts :</h2>
         <ul>
+          <li>React DOM</li>
           <li>Components</li>
           <li>Props</li>
           <li>Hooks</li>
@@ -43,13 +46,14 @@
 
     <section id="theory">
       <h2>React.js Theory</h2>
+
     </section>
 
     <section id="faqs">
       <h2>FAQs</h2>
     </section>
 
-    <section id="about">
+    <!-- <section id="about">
       <h2>About</h2>
       <div>
         <p>
@@ -58,7 +62,7 @@
         </p>
         <p>It is a static website build using HTML, CSS and JavaScript.</p>
       </div>
-    </section>
+    </section> -->
 
     <section id="contact">
       <h2>Contact</h2>
@@ -78,7 +82,8 @@
     </section>
 
     <footer>
-        
+        <h3>ReactNotes</h3>
+        <p>Copyright &#169 2024 ReactNotes</p>
     </footer>
   </body>
 </html>
