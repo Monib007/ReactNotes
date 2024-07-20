@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="faqs.css">
     <title>ReactNotes</title>
   </head>
   <body>
@@ -24,13 +25,60 @@
       </nav>
     </header>
 
-    <section id="faqs">
-      <h2>FAQs</h2>
+    <section id="faqs" class="faqs">
+      <h2 class="title">FAQs</h2>
+      
+      <div class="faq">
+        <div class="question">
+          <h3>What are the features of React?</h3>
+          <img src="./images/icons8-arrow-down-50.png" alt="arrow" class="arrow">
+        </div>
+        <div class="answer">
+          <p>Some features of React include:Declarative UI: React uses a declarative approach to building user interfaces. Declarative means you describe what you want the UI to look like rather than how you want it to be built, making code more readable and maintainable.
+
+            Virtual DOM: React uses a virtual DOM to represent the state of the UI. This allows React to find changes between the virtual DOM and the real DOM and then only update the real DOM when necessary, resulting in better performance.
+            One-way data flow: React uses a one-way data flow to manage the state of the UI. This means that changes to the state are propagated down to the UI, but changes to the UI do not affect the state, helping to prevent errors and make the code easier to reason about.
+            Reusable components: React components are small, reusable chunks of code that when combined create complex UIs, making code more modular and easier to maintain.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="question">
+          <h3>What is the virtual DOM?</h3>
+          <img src="./images/icons8-arrow-down-50.png" alt="arrow" class="arrow">
+        </div>
+        <div class="answer">
+          <p>The virtual DOM (Document Object Model) represents the real DOM that is stored in memory. React uses the virtual DOM to detect changes in the DOM tree, then updates the real DOM when necessary. This results in better UI performance.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="question">
+          <h3>What are the differences between class-based components and functional components with hooks?</h3>
+          <img src="./images/icons8-arrow-down-50.png" alt="arrow" class="arrow">
+        </div>
+        <div class="answer">
+          <p>Hooks enable functional components to maintain state between renders like class-based components. Class-based components preserve state because a component instance is created. Therefore, the same component instance is used between renders. The reusing of the component instance is why class-based components have lifecycle methods.
+
+            Modern versions of React support hooks because a fiber node is used in place of a class-based instance to remember the state between renders. The functional components hook into the fiber node to retrieve the state between renders. The addition of fiber nodes to React many years ago enabled hooks, resulting in class components falling out of favor and functional components becoming more popular.</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <h3>ReactNotes</h3>
+
+    <footer class="footer-container">
+      <h3>ReactNotes</h3>
+        
+        <div class="footer-nav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="theory.html">Theory</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
         <p>Copyright &#169 2024 ReactNotes</p>
+        
     </footer>
+
+    <script src="faqs.js"></script>
   </body>
 </html>

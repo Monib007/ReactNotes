@@ -1,8 +1,11 @@
 
+.contact {
+    background: #08071d;
+}
+
 .contact h2 {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .container {
@@ -34,6 +37,7 @@
     margin-bottom: 10px;
     background: none;
     border-bottom: 2px solid white;
+    color: white;
 }
 
 .container form input::placeholder {
